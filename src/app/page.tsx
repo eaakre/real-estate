@@ -29,8 +29,9 @@ export default async function Home() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-secondary to-primary py-20">
-        <div className="max-w-6xl mx-auto px-4 text-center">
+      <section className="relative bg-[url('/hero.jpg')] bg-cover bg-center bg-no-repeat min-h-[60vh]">
+        <div className="absolute inset-0 bg-gradient-to-r from-secondary/80 to-primary/80" />
+        <div className="relative max-w-6xl mx-auto px-4 py-20 text-center text-white">
           <Typography variant="h1" className="mb-6">
             Your Trusted Fargo Real Estate Experts
           </Typography>
@@ -66,7 +67,7 @@ export default async function Home() {
         {/* Services Section */}
         <section className="py-16">
           <div className="text-center mb-12">
-            <Typography variant="h2">How I Can Help You</Typography>
+            <Typography variant="h2">How We Can Help You</Typography>
             <Typography
               variant="p"
               className="text-secondary-foreground mt-4 max-w-2xl mx-auto"
@@ -79,9 +80,9 @@ export default async function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="text-center p-6 bg-secondary rounded-sm shadow-sm ">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-24 h-24 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg
-                  className="w-8 h-8 text-blue-600"
+                  className="w-16 h-16 text-blue-600"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -104,9 +105,9 @@ export default async function Home() {
             </div>
 
             <div className="text-center p-6 bg-secondary rounded-sm shadow-sm ">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg
-                  className="w-8 h-8 text-green-600"
+                  className="w-16 h-16 text-green-600"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -129,9 +130,9 @@ export default async function Home() {
             </div>
 
             <div className="text-center p-6 bg-secondary rounded-sm shadow-sm ">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-24 h-24 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg
-                  className="w-8 h-8 text-purple-600"
+                  className="w-16 h-16 text-purple-600"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"

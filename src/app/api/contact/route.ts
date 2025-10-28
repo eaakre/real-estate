@@ -22,8 +22,8 @@ export async function POST(req: Request) {
       listingPrice,
     } = data;
 
-    console.log("name", name);
-    console.log("message", message);
+    // console.log("name", name);
+    // console.log("message", message);
 
     // Basic validation
     if (!name || !email || !message) {

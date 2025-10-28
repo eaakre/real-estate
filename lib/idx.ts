@@ -64,14 +64,14 @@ export async function getIdxListings(limit: number = 50): Promise<Listing[]> {
     // Map the SimplyRETS data to your Listing format
     const listings: Listing[] = properties.map(mapSimplyRetsToListing);
 
-    console.log(`Fetched ${listings.length} listings from SimplyRETS`);
+    // console.log(`Fetched ${listings.length} listings from SimplyRETS`);
     return listings;
   } catch (error) {
     console.error("Error fetching IDX listings:", error);
 
     // Fallback to mock data if API fails
     const { mockIdxListings } = await import("../data/mockIdxListings");
-    console.log("Using fallback mock data");
+    // console.log("Using fallback mock data");
     return mockIdxListings;
   }
 }
@@ -80,7 +80,7 @@ export async function getIdxListings(limit: number = 50): Promise<Listing[]> {
 export async function getIdxListing(
   listingId: string
 ): Promise<Listing | null> {
-  console.log(listingId);
+  // console.log(listingId);
   try {
     const response = await fetch(
       `${SIMPLYRETS_BASE_URL}/properties/${listingId}`,

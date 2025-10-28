@@ -57,15 +57,15 @@ export function ListingsPageClient({ allListings }: ListingsPageClientProps) {
             limit: 100,
           };
 
-          console.log("API filters:", apiFilters);
+          // console.log("API filters:", apiFilters);
           const newListings = await getFilteredIdxListings(apiFilters);
-          console.log(`API returned ${newListings.length} listings`);
+          // console.log(`API returned ${newListings.length} listings`);
 
           // Apply client-side filtering for all fields to ensure accuracy
           const finalListings = applyClientSideFilters(newListings, filters);
-          console.log(
-            `After client-side filtering: ${finalListings.length} listings`
-          );
+          // console.log(
+          //   `After client-side filtering: ${finalListings.length} listings`
+          // );
 
           setFilteredListings(finalListings);
           setCurrentFilters(filters);
@@ -76,7 +76,7 @@ export function ListingsPageClient({ allListings }: ListingsPageClientProps) {
 
         // Fallback to client-side filtering on original data
         const clientFiltered = applyClientSideFilters(allListings, filters);
-        console.log(`Fallback filtering: ${clientFiltered.length} listings`);
+        // console.log(`Fallback filtering: ${clientFiltered.length} listings`);
         setFilteredListings(clientFiltered);
         setCurrentFilters(filters);
       } finally {
@@ -91,35 +91,35 @@ export function ListingsPageClient({ allListings }: ListingsPageClientProps) {
     listings: Listing[],
     filters: FilterState
   ): Listing[] => {
-    console.log("Applying client-side filters to", listings.length, "listings");
+    // console.log("Applying client-side filters to", listings.length, "listings");
 
     return listings.filter((listing) => {
       // Price filtering (remove $ and commas for comparison)
       const listingPrice = parseInt(listing.price.replace(/[$,]/g, ""));
       if (filters.minPrice > 0 && listingPrice < filters.minPrice) {
-        console.log(
-          `Filtered out ${listing.address} - price ${listingPrice} < ${filters.minPrice}`
-        );
+        // console.log(
+        //   `Filtered out ${listing.address} - price ${listingPrice} < ${filters.minPrice}`
+        // );
         return false;
       }
       if (filters.maxPrice < 20000000 && listingPrice > filters.maxPrice) {
-        console.log(
-          `Filtered out ${listing.address} - price ${listingPrice} > ${filters.maxPrice}`
-        );
+        // console.log(
+        //   `Filtered out ${listing.address} - price ${listingPrice} > ${filters.maxPrice}`
+        // );
         return false;
       }
 
       // Bed/bath filtering
       if (filters.minBeds > 0 && listing.beds < filters.minBeds) {
-        console.log(
-          `Filtered out ${listing.address} - beds ${listing.beds} < ${filters.minBeds}`
-        );
+        // console.log(
+        //   `Filtered out ${listing.address} - beds ${listing.beds} < ${filters.minBeds}`
+        // );
         return false;
       }
       if (filters.minBaths > 0 && listing.baths < filters.minBaths) {
-        console.log(
-          `Filtered out ${listing.address} - baths ${listing.baths} < ${filters.minBaths}`
-        );
+        // console.log(
+        //   `Filtered out ${listing.address} - baths ${listing.baths} < ${filters.minBaths}`
+        // );
         return false;
       }
 
@@ -141,9 +141,9 @@ export function ListingsPageClient({ allListings }: ListingsPageClientProps) {
             (listingType === "rnt" || listingType.includes("rent")));
 
         if (!typeMatches) {
-          console.log(
-            `Filtered out ${listing.address} - type "${listingType}" doesn't match "${filterType}"`
-          );
+          // console.log(
+          //   `Filtered out ${listing.address} - type "${listingType}" doesn't match "${filterType}"`
+          // );
           return false;
         }
       }
@@ -160,27 +160,27 @@ export function ListingsPageClient({ allListings }: ListingsPageClientProps) {
           (filterStatus === "active" && listingStatus === "for sale");
 
         if (!statusMatches) {
-          console.log(
-            `Filtered out ${listing.address} - status "${listingStatus}" doesn't match "${filterStatus}"`
-          );
+          // console.log(
+          //   `Filtered out ${listing.address} - status "${listingStatus}" doesn't match "${filterStatus}"`
+          // );
           return false;
         }
       }
 
       // Year built filtering
       if (filters.minYear > 1900 && listing.yearBuilt < filters.minYear) {
-        console.log(
-          `Filtered out ${listing.address} - year ${listing.yearBuilt} < ${filters.minYear}`
-        );
+        // console.log(
+        //   `Filtered out ${listing.address} - year ${listing.yearBuilt} < ${filters.minYear}`
+        // );
         return false;
       }
       if (
         filters.maxYear < new Date().getFullYear() &&
         listing.yearBuilt > filters.maxYear
       ) {
-        console.log(
-          `Filtered out ${listing.address} - year ${listing.yearBuilt} > ${filters.maxYear}`
-        );
+        // console.log(
+        //   `Filtered out ${listing.address} - year ${listing.yearBuilt} > ${filters.maxYear}`
+        // );
         return false;
       }
 

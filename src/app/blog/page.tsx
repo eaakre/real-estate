@@ -36,7 +36,7 @@ export default function BlogPage() {
       <div className="text-center py-16">
         <div className="w-24 h-24 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6">
           <svg
-            className="w-12 h-12 text-secondary-foreground"
+            className="w-16 h-16 text-secondary-foreground"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -90,9 +90,9 @@ export default function BlogPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="text-center p-6 bg-secondary rounded-lg shadow-sm">
-            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="w-24 h-24 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <svg
-                className="w-8 h-8 text-blue-600"
+                className="w-16 h-16 text-blue-600"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -115,9 +115,9 @@ export default function BlogPage() {
           </div>
 
           <div className="text-center p-6 bg-secondary rounded-lg shadow-sm">
-            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <svg
-                className="w-8 h-8 text-green-600"
+                className="w-16 h-16 text-green-600"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -140,9 +140,9 @@ export default function BlogPage() {
           </div>
 
           <div className="text-center p-6 bg-secondary rounded-lg shadow-sm">
-            <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="w-24 h-24 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <svg
-                className="w-8 h-8 text-purple-600"
+                className="w-16 h-16 text-purple-600"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -165,9 +165,9 @@ export default function BlogPage() {
           </div>
 
           <div className="text-center p-6 bg-secondary rounded-lg shadow-sm">
-            <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="w-24 h-24 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <svg
-                className="w-8 h-8 text-yellow-600"
+                className="w-16 h-16 text-yellow-600"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -196,9 +196,9 @@ export default function BlogPage() {
           </div>
 
           <div className="text-center p-6 bg-secondary rounded-lg shadow-sm">
-            <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="w-24 h-24 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <svg
-                className="w-8 h-8 text-red-600"
+                className="w-16 h-16 text-red-600"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -221,9 +221,9 @@ export default function BlogPage() {
           </div>
 
           <div className="text-center p-6 bg-secondary rounded-lg shadow-sm">
-            <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="w-24 h-24 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <svg
-                className="w-8 h-8 text-indigo-600"
+                className="w-16 h-16 text-indigo-600"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
