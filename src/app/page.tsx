@@ -31,7 +31,7 @@ export default async function Home() {
       {/* Hero Section */}
       <section className="relative bg-[url('/hero.jpg')] bg-cover bg-center bg-no-repeat">
         <div className="absolute inset-0 bg-gradient-to-r from-secondary/80 to-primary/80" />
-        <div className="relative max-w-6xl mx-auto px-4 py-50 text-center text-white">
+        <div className="relative max-w-6xl mx-auto px-4 py-20 md:py-50 text-center text-white">
           <Typography variant="h1" className="mb-6">
             Your Trusted Fargo Real Estate Experts
           </Typography>

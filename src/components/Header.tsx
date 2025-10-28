@@ -58,7 +58,7 @@ export function Header() {
             aria-label="Open Navigation Menu"
             onClick={() => setIsOpen(true)}
           >
-            <Menu />
+            <Menu className="w-12 h-12" />
           </button>
         </div>
       </nav>
