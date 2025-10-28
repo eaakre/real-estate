@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, ChevronRight } from "lucide-react";
 import Drawer from "./ui/Drawer";
-// import Image from "next/image";
+import Image from "next/image";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,14 +38,14 @@ export function Header() {
         <div className="max-w-6xl mx-auto px-4 flex items-center justify-between relative">
           {/* Logo */}
           <Link href="/" className="text-2xl font-bold py-8">
-            {/* <Image
-              src="/images/numbers-and-nostalgia-logo.svg"
+            <Image
+              src="/logo.png"
               alt="Real Estate of Mind - Real Estate"
-              width={220}
-              height={64}
+              width={200}
+              height={60}
               priority
-            /> */}
-            Real Estate of Mind
+            />
+            {/* Real Estate of Mind */}
           </Link>
 
           {/* Desktop Links */}

@@ -29,9 +29,9 @@ export default async function Home() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="relative bg-[url('/hero.jpg')] bg-cover bg-center bg-no-repeat min-h-[60vh]">
+      <section className="relative bg-[url('/hero.jpg')] bg-cover bg-center bg-no-repeat">
         <div className="absolute inset-0 bg-gradient-to-r from-secondary/80 to-primary/80" />
-        <div className="relative max-w-6xl mx-auto px-4 py-20 text-center text-white">
+        <div className="relative max-w-6xl mx-auto px-4 py-50 text-center text-white">
           <Typography variant="h1" className="mb-6">
             Your Trusted Fargo Real Estate Experts
           </Typography>
@@ -49,13 +49,13 @@ export default async function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/listings"
-              className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold"
+              className="bg-[#0d3b69] text-white px-8 py-3 rounded-lg hover:bg-[#0c3a59] transition-colors font-semibold"
             >
               Browse Homes
             </Link>
             <Link
               href="/contact"
-              className="bg-white text-blue-600 px-8 py-3 rounded-lg border-2 border-blue-600 hover:bg-blue-50 transition-colors font-semibold"
+              className="bg-white text-[#0d3b69] px-8 py-3 rounded-lg border-2 border-[#0d3b69] hover:bg-blue-50 transition-colors font-semibold"
             >
               Get Started Today
             </Link>
@@ -176,7 +176,7 @@ export default async function Home() {
             <div className="text-center mt-10">
               <Link
                 href="/listings"
-                className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold"
+                className="bg-[#0d3b69] text-white px-8 py-3 rounded-lg hover:bg-[#0c3a59] transition-colors font-semibold"
               >
                 View All Listings
               </Link>
@@ -224,7 +224,7 @@ export default async function Home() {
                 today for a free consultation.
               </Typography>
 
-              <div className="space-y-3">
+              <div className="mb-8 space-y-3">
                 <div className="flex items-center">
                   <svg
                     className="w-5 h-5 text-secondary-foreground mr-3"
@@ -261,7 +261,7 @@ export default async function Home() {
 
               <Link
                 href="/contact"
-                className="inline-block mt-6 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold"
+                className="bg-[#0d3b69] mt-8 text-white px-8 py-3 rounded-lg hover:bg-[#0c3a59] transition-colors font-semibold"
               >
                 Contact Real Estate of Mind
               </Link>

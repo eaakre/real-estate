@@ -180,7 +180,7 @@ export function ListingsFilter({ onFilterChange }: ListingsFilterProps) {
         <div className="border-t border-gray-200 pt-4">
           <button
             onClick={() => setIsExpanded(!isExpanded)}
-            className="flex items-center gap-2 text-sm font-medium text-blue-600 hover:text-blue-700 transition-colors mb-4"
+            className="flex items-center gap-2 text-sm font-medium text-[#0d3b69] hover:text-[#0c3a59] transition-colors mb-4"
           >
             <SlidersHorizontal size={16} />
             Advanced Filters
@@ -271,7 +271,7 @@ export function ListingsFilter({ onFilterChange }: ListingsFilterProps) {
         <div className="flex flex-col sm:flex-row gap-3 pt-4 border-t border-gray-200">
           <button
             onClick={handleSearch}
-            className="flex-1 sm:flex-none bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-md font-medium transition-colors duration-200 flex items-center justify-center gap-2 shadow-sm hover:shadow-md"
+            className="flex-1 sm:flex-none bg-[#0d3b69] hover:bg-[#0c3a59] text-white px-6 py-2.5 rounded-md font-medium transition-colors duration-200 flex items-center justify-center gap-2 shadow-sm hover:shadow-md"
           >
             <Search size={18} />
             Apply Filters

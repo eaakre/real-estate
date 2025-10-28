@@ -406,7 +406,7 @@ export function ContactForm({
           <button
             type="submit"
             disabled={isSubmitting || !formData.agreeToTerms}
-            className="w-full bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            className="w-full bg-[#0d3b69] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#0c3a59] focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
           >
             {isSubmitting ? "Sending Message..." : "Send Message"}
           </button>

@@ -75,7 +75,7 @@ export default function BlogPage() {
 
           <Link
             href="/contact"
-            className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold"
+            className="inline-block bg-[#0d3b69] text-white px-6 py-3 rounded-lg hover:bg-[#0c3a59] transition-colors font-semibold"
           >
             Contact Real Estate of Mind
           </Link>
