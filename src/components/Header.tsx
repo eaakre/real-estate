@@ -40,12 +40,12 @@ export function Header() {
           <Link href="/" className="text-2xl font-bold py-8">
             {/* <Image
               src="/images/numbers-and-nostalgia-logo.svg"
-              alt="Jeremy Kopp - Real Estate"
+              alt="Real Estate of Mind - Real Estate"
               width={220}
               height={64}
               priority
             /> */}
-            Jeremy Kopp
+            Real Estate of Mind
           </Link>
 
           {/* Desktop Links */}

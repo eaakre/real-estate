@@ -7,16 +7,16 @@ import { Listing } from "../../../types/listing";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Learn more about Jeremy Kopp, a trusted real estate agent serving Fargo, Moorhead, and West Fargo. Discover his experience, approach, and commitment to helping clients buy and sell homes.",
+    "Learn more about Real Estate of Mind, trusted real estate agents serving Fargo, Moorhead, and West Fargo. Discover their experience, approach, and commitment to helping clients buy and sell homes.",
   openGraph: {
-    title: "About Jeremy Kopp - Fargo Real Estate",
+    title: "About Real Estate of Mind - Fargo Real Estate",
     description:
-      "Learn about Jeremy Kopp, your local real estate expert for Fargo, Moorhead, and West Fargo.",
-    url: "https://jeremykopp.com/about",
+      "Learn about Real Estate of Mind, your local real estate experts for Fargo, Moorhead, and West Fargo.",
+    url: "http://localhost:3000/about",
     type: "website",
   },
   alternates: {
-    canonical: "https://jeremykopp.com/about",
+    canonical: "http://localhost:3000/about",
   },
 };
 
@@ -26,25 +26,26 @@ export default async function AboutPage() {
 
   return (
     <main className="max-w-6xl mx-auto px-4 py-12">
-      <Typography variant="h1">About Jeremy Kopp</Typography>
+      <Typography variant="h1">About Real Estate of Mind</Typography>
 
       <Typography variant="p">
-        Jeremy Kopp is a dedicated real estate agent serving Fargo, Moorhead,
-        and West Fargo. With years of experience in the local housing market,
-        Jeremy helps clients buy and sell homes with confidence and ease.
+        Real Estate of Mind are dedicated real estate agents serving Fargo,
+        Moorhead, and West Fargo. With years of experience in the local housing
+        market, Real Estate of Mind helps clients buy and sell homes with
+        confidence and ease.
       </Typography>
 
       <Typography variant="p">
-        Jeremy’s approach focuses on clear communication, honesty, and putting
-        his clients’ needs first. Whether you are a first-time buyer or looking
-        to sell your home, Jeremy is committed to providing a smooth and
-        successful experience.
+        Real Estate of Mind&apos;s approach focuses on clear communication,
+        honesty, and putting their clients&apos; needs first. Whether you are a
+        first-time buyer or looking to sell your home, Real Estate of Mind is
+        committed to providing a smooth and successful experience.
       </Typography>
 
       <Typography variant="p">
-        Outside of real estate, Jeremy enjoys exploring the local community,
-        staying up to date with market trends, and helping people achieve their
-        homeownership dreams.
+        Outside of real estate, the agents at Real Estate of Mind enjoys
+        exploring the local community, staying up to date with market trends,
+        and helping people achieve their homeownership dreams.
       </Typography>
 
       {/* Featured Listings */}

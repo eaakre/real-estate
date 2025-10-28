@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Jeremy Kopp | Fargo Real Estate",
-    template: "%s | Jeremy Kopp Real Estate",
+    default: "Real Estate of Mind | Fargo Real Estate",
+    template: "%s | Real Estate of Mind",
   },
   description:
     "Helping clients buy and sell homes in Fargo, Moorhead, and West Fargo.",
@@ -30,16 +30,16 @@ export const metadata: Metadata = {
     "sell your home Fargo",
     "real estate agent Fargo ND",
   ],
-  metadataBase: new URL("https://jeremykopp.com"),
+  metadataBase: new URL("http://localhost:3000"),
   alternates: {
-    canonical: "https://jeremykopp.com",
+    canonical: "http://localhost:3000",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://jeremykopp.com",
-    siteName: "Jeremy Kopp Real Estate",
-    title: "Jeremy Kopp | Fargo Real Estate",
+    url: "http://localhost:3000",
+    siteName: "Real Estate of Mind",
+    title: "Real Estate of Mind | Fargo Real Estate",
     description:
       "Helping clients buy and sell homes in Fargo, Moorhead, and West Fargo.",
     images: [
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Jeremy Kopp - Fargo Real Estate Agent",
+        alt: "Real Estate of Mind - Fargo Real Estate",
       },
     ],
   },

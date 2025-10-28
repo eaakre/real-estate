@@ -3,26 +3,26 @@ import { ContactForm } from "@/components/ContactForm";
 import { Typography } from "@/components/ui/Typography";
 
 export const metadata: Metadata = {
-  title: "Contact Jeremy Kopp - Fargo Real Estate Agent | Get in Touch",
+  title: "Contact Real Estate of Mind - Fargo Real Estate | Get in Touch",
   description:
-    "Get in touch with Jeremy Kopp, your trusted Fargo real estate agent. Reach out for buying, selling, or general real estate questions in Fargo, Moorhead, and West Fargo.",
+    "Get in touch with Real Estate of Mind, your trusted Fargo real estate agents. Reach out for buying, selling, or general real estate questions in Fargo, Moorhead, and West Fargo.",
   openGraph: {
-    title: "Contact Jeremy Kopp - Fargo Real Estate",
+    title: "Contact Real Estate of Mind - Fargo Real Estate",
     description:
-      "Reach out to Jeremy Kopp for help with buying or selling homes in Fargo, Moorhead, and West Fargo.",
-    url: "https://jeremykopp.com/contact",
+      "Reach out to Real Estate of Mind for help with buying or selling homes in Fargo, Moorhead, and West Fargo.",
+    url: "http://localhost:3000/contact",
     type: "website",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Jeremy Kopp - Fargo Real Estate Agent",
+        alt: "Real Estate of Mind- Fargo Real Estate",
       },
     ],
   },
   alternates: {
-    canonical: "https://jeremykopp.com/contact",
+    canonical: "http://localhost:3000/contact",
   },
 };
 
@@ -33,12 +33,13 @@ export default function ContactPage() {
         {/* Contact Information */}
         <div className="lg:col-span-1">
           <Typography variant="h1" className="mb-6">
-            Contact Jeremy Kopp
+            Contact Real Estate of Mind
           </Typography>
 
           <Typography variant="p" className="mb-8">
             Have a question about real estate in Fargo, Moorhead, or West Fargo?
-            Send a message and Jeremy will get back to you as soon as possible.
+            Send a message and Real Estate of Mind will get back to you as soon
+            as possible.
           </Typography>
 
           {/* Contact Details */}
@@ -89,10 +90,10 @@ export default function ContactPage() {
                   />
                 </svg>
                 <a
-                  href="mailto:jeremy@jeremykopp.com"
+                  href="mailto:realestate@realestateofmind.com"
                   className="hover:text-primary-hover transition-colors"
                 >
-                  jeremy@jeremykopp.com
+                  realestate@realestateofmind.com
                 </a>
               </div>
             </div>

@@ -7,7 +7,7 @@ export function Footer() {
         <div className="grid md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-2xl text-[#fafafa] font-bold mb-4">
-              Jeremy Kopp Real Estate
+              Real Estate of Mind
             </h3>
             {/* <p className="text-gray-300">
               Where statistics meet stories, and data discovers its soul.
@@ -68,7 +68,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
-          <p>&copy; 2025 Jeremy Kopp. All rights reserved.</p>
+          <p>&copy; 2025 Real Estate of Mind. All rights reserved.</p>
         </div>
       </div>
     </footer>

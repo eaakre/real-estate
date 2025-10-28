@@ -268,7 +268,7 @@ export function ContactForm({
             value={formData.subject}
             onChange={handleChange}
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-            placeholder="What can Jeremy help you with?"
+            placeholder="What can Real Estate of Mind help you with?"
           />
         </div>
 
@@ -379,7 +379,7 @@ export function ContactForm({
             value={formData.message}
             onChange={handleChange}
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-            placeholder="Tell Jeremy about your real estate needs..."
+            placeholder="Tell Real Estate of Mind about your real estate needs..."
           />
         </div>
 
@@ -395,8 +395,8 @@ export function ContactForm({
               className="mr-3 mt-1 text-secondary-foreground"
             />
             <span className="text-sm text-secondary-foreground">
-              I agree to be contacted by Jeremy Kopp regarding my real estate
-              inquiry. I understand that I can opt out at any time. *
+              I agree to be contacted by Real Estate of Mind regarding my real
+              estate inquiry. I understand that I can opt out at any time. *
             </span>
           </label>
         </div>
@@ -434,7 +434,7 @@ export function ContactForm({
               </p>
             </div>
             <p className="text-green-700 mt-2 ml-8">
-              Jeremy will get back to you within 24 hours.
+              Real Estate of Mind will get back to you within 24 hours.
             </p>
           </div>
         )}
@@ -458,7 +458,8 @@ export function ContactForm({
               <p className="text-red-800 font-medium">Something went wrong</p>
             </div>
             <p className="text-red-700 mt-2 ml-8">
-              Please try again or call Jeremy directly at (701) 555-0123.
+              Please try again or call Real Estate of Mind directly at (701)
+              555-0123.
             </p>
           </div>
         )}

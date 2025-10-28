@@ -5,7 +5,7 @@ import { Listing } from "../../../types/listing";
 import { Typography } from "@/components/ui/Typography";
 
 export const metadata: Metadata = {
-  title: "Listings | Jeremy Kopp Real Estate",
+  title: "Listings | Real Estate of Mind",
   description:
     "Browse current real estate listings in Fargo, Moorhead, and West Fargo. Find homes for sale, view details, and explore featured properties.",
 };

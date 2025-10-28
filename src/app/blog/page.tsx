@@ -3,18 +3,18 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Real Estate Blog - Jeremy Kopp | Fargo Home Buying & Selling Tips",
+  title: "Blog - Real Estate of Mind | Fargo Home Buying & Selling Tips",
   description:
-    "Stay informed with Jeremy Kopp's real estate blog. Get expert insights on buying and selling homes in Fargo, Moorhead, and West Fargo, plus local market updates and tips.",
+    "Stay informed with Real Estate of Mind's real estate blog. Get expert insights on buying and selling homes in Fargo, Moorhead, and West Fargo, plus local market updates and tips.",
   openGraph: {
-    title: "Real Estate Blog - Jeremy Kopp",
+    title: "Blog - Real Estate of Mind",
     description:
       "Expert real estate insights and tips for Fargo, Moorhead, and West Fargo home buyers and sellers.",
-    url: "https://jeremykopp.com/blog",
+    url: "http://localhost:3000/blog",
     type: "website",
   },
   alternates: {
-    canonical: "https://jeremykopp.com/blog",
+    canonical: "http://localhost:3000/blog",
   },
 };
 
@@ -58,9 +58,9 @@ export default function BlogPage() {
           variant="p"
           className="text-secondary-foreground mb-8 max-w-2xl mx-auto"
         >
-          Jeremy is preparing valuable content to help you navigate the real
-          estate market. Check back soon for expert insights on buying and
-          selling homes in the Fargo area.
+          Real Estate of Mind is preparing valuable content to help you navigate
+          the real estate market. Check back soon for expert insights on buying
+          and selling homes in the Fargo area.
         </Typography>
 
         <div className="bg-secondary p-8 rounded-lg max-w-md mx-auto">
@@ -69,15 +69,15 @@ export default function BlogPage() {
           </Typography>
           <Typography variant="p" className="text-secondary-foreground mb-6">
             Want to be notified when new blog posts are published? Get in touch
-            with Jeremy to stay informed about market updates and real estate
-            tips.
+            with Real Estate of Mind to stay informed about market updates and
+            real estate tips.
           </Typography>
 
           <Link
             href="/contact"
             className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold"
           >
-            Contact Jeremy
+            Contact Real Estate of Mind
           </Link>
         </div>
       </div>

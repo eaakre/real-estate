@@ -7,18 +7,18 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
-    "Jeremy Kopp - Fargo Real Estate Agent | Homes for Sale in Fargo, Moorhead & West Fargo",
+    "Real Estate of Mind - Fargo Real Estate | Homes for Sale in Fargo, Moorhead & West Fargo",
   description:
-    "Find your dream home in Fargo, Moorhead, and West Fargo with Jeremy Kopp, your trusted local real estate agent. Browse homes for sale and get expert guidance for buying or selling.",
+    "Find your dream home in Fargo, Moorhead, and West Fargo with Real Estate of Mind, your trusted local real estate agents. Browse homes for sale and get expert guidance for buying or selling.",
   openGraph: {
-    title: "Jeremy Kopp - Fargo Real Estate Agent",
+    title: "Real Estate of Mind - Fargo Real Estate",
     description:
       "Your trusted real estate expert for Fargo, Moorhead, and West Fargo. Find homes for sale and get expert buying and selling guidance.",
-    url: "https://jeremykopp.com",
+    url: "http://localhost:3000",
     type: "website",
   },
   alternates: {
-    canonical: "https://jeremykopp.com",
+    canonical: "http://localhost:3000",
   },
 };
 
@@ -32,16 +32,17 @@ export default async function Home() {
       <section className="bg-gradient-to-r from-secondary to-primary py-20">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <Typography variant="h1" className="mb-6">
-            Your Trusted Fargo Real Estate Expert
+            Your Trusted Fargo Real Estate Experts
           </Typography>
 
           <Typography
             variant="p"
             className="text-xl text-secondary-foreground mb-8 max-w-3xl mx-auto"
           >
-            Jeremy Kopp helps families buy and sell homes throughout Fargo,
-            Moorhead, and West Fargo. Experience personalized service and local
-            expertise that makes your real estate journey smooth and successful.
+            Real Estate of Mind helps families buy and sell homes throughout
+            Fargo, Moorhead, and West Fargo. Experience personalized service and
+            local expertise that makes your real estate journey smooth and
+            successful.
           </Typography>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -71,8 +72,8 @@ export default async function Home() {
               className="text-secondary-foreground mt-4 max-w-2xl mx-auto"
             >
               Whether you&apos;re buying your first home or selling a longtime
-              family residence, I&apos;m here to guide you through every step of
-              the process.
+              family residence, we&apos;re here to guide you through every step
+              of the process.
             </Typography>
           </div>
 
@@ -187,28 +188,28 @@ export default async function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <Typography variant="h2" className="mb-6">
-                Why Choose Jeremy Kopp?
+                Why Choose Real Estate of Mind?
               </Typography>
 
               <Typography variant="p" className="mb-4">
                 With years of experience in the Fargo-Moorhead real estate
-                market, Jeremy brings deep local knowledge and a commitment to
-                exceptional service to every client relationship.
+                market, Real Estate of Mind brings deep local knowledge and a
+                commitment to exceptional service to every client relationship.
               </Typography>
 
               <Typography variant="p" className="mb-6">
-                Jeremy&apos;s approach focuses on clear communication, honest
-                advice, and putting your needs first. Whether you&apos;re a
-                first-time buyer or experienced investor, you&apos;ll receive
-                personalized attention and expert guidance throughout your real
-                estate journey.
+                Real Estate of Mind&apos;s approach focuses on clear
+                communication, honest advice, and putting your needs first.
+                Whether you&apos;re a first-time buyer or experienced investor,
+                you&apos;ll receive personalized attention and expert guidance
+                throughout your real estate journey.
               </Typography>
 
               <Link
                 href="/about"
                 className="inline-block text-accent hover:text-primary-hover font-semibold"
               >
-                Learn More About Jeremy →
+                Learn More About Real Estate of Mind →
               </Link>
             </div>
 
@@ -217,9 +218,9 @@ export default async function Home() {
                 Ready to Get Started?
               </Typography>
               <Typography variant="p" className="mb-6">
-                Whether you&apos;re buying or selling, Jeremy is here to help
-                you achieve your real estate goals. Get in touch today for a
-                free consultation.
+                Whether you&apos;re buying or selling, Real Estate of Mind is
+                here to help you achieve your real estate goals. Get in touch
+                today for a free consultation.
               </Typography>
 
               <div className="space-y-3">
@@ -253,7 +254,7 @@ export default async function Home() {
                       d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                     />
                   </svg>
-                  <span>jeremy@jeremykopp.com</span>
+                  <span>realestate@realestateofmind.com</span>
                 </div>
               </div>
 
@@ -261,7 +262,7 @@ export default async function Home() {
                 href="/contact"
                 className="inline-block mt-6 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold"
               >
-                Contact Jeremy
+                Contact Real Estate of Mind
               </Link>
             </div>
           </div>

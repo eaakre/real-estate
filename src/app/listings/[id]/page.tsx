@@ -30,12 +30,12 @@ export async function generateMetadata({
     openGraph: {
       title: listing.address,
       description: `${listing.beds} beds • ${listing.baths} baths • ${listing.sqft} sqft`,
-      url: `https://jeremykopp.com/listings/${listing.id}`,
+      url: `http://localhost:3000/listings/${listing.id}`,
       images: [listing.image?.[0]],
       type: "website",
     },
     alternates: {
-      canonical: `https://jeremykopp.com/listings/${listing.id}`,
+      canonical: `http://localhost:3000/listings/${listing.id}`,
     },
   };
 }
