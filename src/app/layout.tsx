@@ -14,6 +14,7 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+const domain = process.env.DOMAIN || "http://localhost:3000";
 
 export const metadata: Metadata = {
   title: {
@@ -30,14 +31,14 @@ export const metadata: Metadata = {
     "sell your home Fargo",
     "real estate agent Fargo ND",
   ],
-  metadataBase: new URL("http://localhost:3000"),
+  metadataBase: new URL(domain),
   alternates: {
-    canonical: "http://localhost:3000",
+    canonical: process.env.DOMAIN,
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "http://localhost:3000",
+    url: process.env.DOMAIN,
     siteName: "Real Estate of Mind",
     title: "Real Estate of Mind | Fargo Real Estate",
     description:

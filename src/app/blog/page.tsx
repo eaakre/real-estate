@@ -10,11 +10,11 @@ export const metadata: Metadata = {
     title: "Blog - Real Estate of Mind",
     description:
       "Expert real estate insights and tips for Fargo, Moorhead, and West Fargo home buyers and sellers.",
-    url: "http://localhost:3000/blog",
+    url: `${process.env.DOMAIN}/blog`,
     type: "website",
   },
   alternates: {
-    canonical: "http://localhost:3000/blog",
+    canonical: `${process.env.DOMAIN}/blog`,
   },
 };
 

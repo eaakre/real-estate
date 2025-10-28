@@ -30,12 +30,12 @@ export async function generateMetadata({
     openGraph: {
       title: listing.address,
       description: `${listing.beds} beds • ${listing.baths} baths • ${listing.sqft} sqft`,
-      url: `http://localhost:3000/listings/${listing.id}`,
+      url: `${process.env.DOMAIN}/listings/${listing.id}`,
       images: [listing.image?.[0]],
       type: "website",
     },
     alternates: {
-      canonical: `http://localhost:3000/listings/${listing.id}`,
+      canonical: `${process.env.DOMAIN}/listings/${listing.id}`,
     },
   };
 }

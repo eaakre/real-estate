@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Contact Real Estate of Mind - Fargo Real Estate",
     description:
       "Reach out to Real Estate of Mind for help with buying or selling homes in Fargo, Moorhead, and West Fargo.",
-    url: "http://localhost:3000/contact",
+    url: `${process.env.DOMAIN}/contact`,
     type: "website",
     images: [
       {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "http://localhost:3000/contact",
+    canonical: `${process.env.DOMAIN}/contact`,
   },
 };
 
